@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #image
+        {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            float: none;
+        }
+        body
+        {
+           background-color: rgb(26, 158, 175);
+        }
+        #container
+        {
+            border-radius: 10px;
+            background-color: white;
+            margin-top: 70px;
+            padding-bottom: 25px;
+        }
+    </style>
+        <script>
+            function mydivStyleFun()
+            {
+            var elmnt = document.getElementById("image");
+             var height = document.getElementById("container");
+             document.getElementById("container").style.width = elmnt.clientWidth+"px";
+             document.getElementById("container").style.height = height+"px";
+            }
+        </script>                
+</head>
+        <body onload = "mydivStyleFun()">
+        <center><div id="container">
+        <img id="image"  src="https://cdn1.vectorstock.com/i/thumb-large/47/15/golden-musical-key-vector-23234715.jpg">
+        <h3  style="color :rgb(228, 58, 39)">Order Summary</h3>
+        <p style="color:rgb(129, 15, 114)">you can listen to millions of songs,audio booksand podcasts on my device anywhere you like!</p>
+        </div></center>
+
+        </body>
+    </html>
